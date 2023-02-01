@@ -15357,7 +15357,7 @@ function pressKey(key){
 
 function deleteKey(){
     const getactiveTiles = getActiveTiles()
-    const lastTile = activeTiles[activeTiles.length - 1]
+    const lastTile = getactiveTiles[getactiveTiles.length - 1]
     if(lastTile == null) return
     lastTile.textContent = ""
     delete lastTile.dataset.state
